@@ -1,0 +1,42 @@
+#spring.application.name=ConstructionDrawingManagement
+#
+#custom.jwt.secret=9fpGEUpGqiplW2HJB7UDOpJScDgzJWJR5xqOP3zsJQKs8fuIQpvw37BP3hmNmb/9
+spring:
+  profiles:
+    active: @activatedProperties@
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: thangckdt@gmail.com
+    password: bhwxmfnljndftdlv
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          ssl:
+            trust: smtp.gmail.com
+
+  custom:
+    jwt:
+      secret: 9fpGEUpGqiplW2HJB7UDOpJScDgzJWJR5xqOP3zsJQKs8fuIQpvw37BP3hmNmb/9
+
+  #setup cache for project
+  #  cache:
+  #    type: redis
+  #  redis:
+  #     host: redis-14089.c334.asia-southeast2-1.gce.redns.redis-cloud.com
+  #     port: 14089
+  #     password: gQt9d6tzgYPC9GI6RCdNGvvUdKGotWNO
+  #     username: default
+
+#  profiles:
+#    active: dev
+
+
+#spring:
+#  profiles:
+#    active: @activatedProperties@
